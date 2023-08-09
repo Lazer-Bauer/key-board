@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  background-color: rgb(118, 183, 118);
+  color: rgb(81, 153, 129);
+  padding: 10% 10% 10% 10%;
+}
+.writingPad {
+  text-align: center;
+  margin-top: 1%;
+  cursor: text;
+}
+
+button.space.key {
+  width: 584px;
+}
+.backspace {
+  flex-grow: 1.5;
+}
+.padButton {
+  display: flex;
+  justify-content: center;
+}
+.clear {
+  margin-left: 10%;
+}
+button.key {
+  flex-grow: 1;
+  height: 50px;
+  margin: 0 1.5px 0 1.5px;
+}
+.row {
+  margin-bottom: 5px;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.active {
+  display: flex;
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 0 20px 7px;
+}
+.capsLock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.symbolActivator {
+  display: none;
+}
+.phoneOnly {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .notPhone {
+    display: none;
+  }
+  .backspace {
+    display: none;
+  }
+  .phoneOnly {
+    display: inline-block;
+  }
+  .container {
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 5% 2%;
+  }
+  .row {
+    width: 100%;
+  }
+}
